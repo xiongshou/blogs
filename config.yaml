@@ -1,7 +1,7 @@
-baseURL: https://example.com
-languageCode: en-us
+baseURL: https://blog.codesheng.top
+languageCode: zh-cn
 defaultContentLanguage: en
-title: Cupper
+title: sheng
 theme: cupper-hugo-theme
 googleAnalytics: UA-123456789-1
 disqusShortname: yourdiscussshortname
@@ -17,9 +17,9 @@ imaging:
   quality: 99
 
 params:
-  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
-  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
+  description: 盛某人偶尔写字的地方.
+  # homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
+  # footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: someUser
@@ -37,10 +37,10 @@ params:
   customJs:
     - js/custom_01.js
     - js/custom_02.js
-  utterances:
-    repo: username/username.github.io
-    issueTerm: title
-    theme: github-light
+  # utterances:
+  #   repo: username/username.github.io
+  #   issueTerm: title
+  #   theme: github-light
 
 menu:
   nav:
@@ -56,9 +56,9 @@ menu:
     - name: About
       url: /about/
       weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
+    # - name: RSS
+    #   url: /index.xml
+    #   weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
