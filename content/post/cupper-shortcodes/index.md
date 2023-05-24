@@ -1,10 +1,9 @@
 ---
 title: "Cupper Shortcodes"
 date: 2019-02-12T23:39:06-06:00
-tags: [hugo, shortcodes]
+tags: [hugo]
 toc: true
 ---
-
 ## blockquote
 
 ```
@@ -73,6 +72,7 @@ hugo server --gc
 ```
 
 {{< code numbered="true" >}}
+
 <div [[[role="dialog"]]] [[[aria-labelledby="dialog-heading"]]]>
   <button [[[aria-label="close"]]]>x</button>
   <h2 [[[id="dialog-heading"]]]>Confirmation</h2>
@@ -165,23 +165,24 @@ Here is some markdown including [a link](https://twitter.com/heydonworks). Donec
 ```
 
 {{< fileTree >}}
+
 * Level 1 folder
-    * Level 2 file
-    * Level 2 folder
-        * Level 3 file
-        * Level 3 folder
-            * Level 4 file
-        * Level 3 folder
-            * Level 4 file
-            * Level 4 file
-        * Level 3 file
-    * Level 2 folder
-        * Level 3 file
-        * Level 3 file
-        * Level 3 file
-    * Level 2 file
+  * Level 2 file
+  * Level 2 folder
+    * Level 3 file
+    * Level 3 folder
+      * Level 4 file
+    * Level 3 folder
+      * Level 4 file
+      * Level 4 file
+    * Level 3 file
+  * Level 2 folder
+    * Level 3 file
+    * Level 3 file
+    * Level 3 file
+  * Level 2 file
 * Level 1 file
-{{< /fileTree >}}
+  {{< /fileTree >}}
 
 ## ticks
 
@@ -194,10 +195,11 @@ Here is some markdown including [a link](https://twitter.com/heydonworks). Donec
 ```
 
 {{< ticks >}}
+
 * Selling point one
 * Selling point two
 * Selling point three
-{{< /ticks >}}
+  {{< /ticks >}}
 
 ## figureCupper
 
@@ -210,9 +212,9 @@ options="700x" */>}}
 ```
 
 {{< figureCupper
-img="sun.jpg" 
-caption="The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. [Credits](https://images.nasa.gov/details-GSFC_20171208_Archive_e000393.html)." 
-command="Resize" 
+img="sun.jpg"
+caption="The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. [Credits](https://images.nasa.gov/details-GSFC_20171208_Archive_e000393.html)."
+command="Resize"
 options="700x" >}}
 
 ## principles
@@ -227,7 +229,7 @@ See the [full principles list](https://github.com/zwbetz-gh/cupper-hugo-theme/bl
 
 ## wcag
 
-See the [full wcag list](https://github.com/zwbetz-gh/cupper-hugo-theme/blob/master/data/wcag.json). 
+See the [full wcag list](https://github.com/zwbetz-gh/cupper-hugo-theme/blob/master/data/wcag.json).
 
 ```
 {{</* wcag include="1.2.1, 1.3.1, 4.1.2" */>}}
