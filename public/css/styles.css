@@ -973,7 +973,7 @@ h1 svg {
         display: none;
     }
     .main-and-footer {
-        margin-left: 0;
+        margin-left: 5;
     }
     a {
         border: 0;
