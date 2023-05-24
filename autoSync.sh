@@ -10,4 +10,3 @@ git commit -m 'add some code from Mac'
 git push             #upload data
 
 ssh root@42.192.3.108 "cd /var/www/blogs; git pull"
-cd ..
