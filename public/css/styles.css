@@ -358,10 +358,10 @@ caption {
     max-width: 25rem;
 }
 .main-and-footer {
-    margin-left: 15rem;
+    margin-left: 10rem;
 }
 .main-and-footer > div {
-    max-width: 40rem;
+    max-width: 50rem;
     margin: 0 auto;
     padding: 2.25rem;
 }

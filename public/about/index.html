@@ -11,7 +11,7 @@
   
     
     <meta name="description" content="偶尔更新一些内容
-#!/bin/bash function ergodic(){ for file in `ls -a $1` do if [ $file == . ] || [ $file == .. ] || [ $file == &#34;kafka&#34; ] then continue fi if [ -d $1/$file ] then ergodic $1/$file else md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE fi done } #设置输出文件名 RECORDFILE=check.md5 #如果存在先删除，防止重复运行脚本时追加到记录文件 test -e $RECORDFILE &amp;&amp; rm $RECORDFILE #获取当前目录 INIT_PATH=`pwd` #遍历所有文件 ergodic $INIT_PATH #按文件名称排序 sort t -k 2 $RECORDFILE -o $RECORDFILE #!">
+&lt;div role=&#34;dialog&#34; aria-labelledby=&#34;dialog-heading&#34;&gt; &lt;button aria-label=&#34;close&#34;&gt;x&lt;/button&gt; &lt;h2 id=&#34;dialog-heading&#34;&gt;Confirmation&lt;/h2&gt; &lt;p&gt;Press Okay to confirm or Cancel&lt;/p&gt; &lt;button&gt;Okay&lt;/button&gt; &lt;button&gt;Cancel&lt;/button&gt; &lt;/div&gt; #!/bin/bash function ergodic(){ for file in `ls -a $1` do if [ $file == . ] || [ $file == .. ] || [ $file == &#34;kafka&#34; ] then continue fi if [ -d $1/$file ] then ergodic $1/$file else md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE fi done } #设置输出文件名 RECORDFILE=check.md5 #如果存在先删除，防止重复运行脚本时追加到记录文件 test -e $RECORDFILE &amp;&amp; rm $RECORDFILE #获取当前目录 INIT_PATH=`pwd` #遍历所有文件 ergodic $INIT_PATH #按文件名称排序 sort t -k 2 $RECORDFILE -o $RECORDFILE ">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://blog.codesheng.top/apple-touch-icon.png">
@@ -259,64 +259,76 @@
   <main id="main">
     <h1>About</h1>
     <p>偶尔更新一些内容</p>
-<pre><code class="language-cpp">#!/bin/bash
-
-function ergodic(){
-    for file in `ls -a $1`
-    do
-        if [ $file == . ] || [ $file == .. ] || [ $file == &quot;kafka&quot; ]
-        then
-            continue
-        fi
-        if [ -d $1/$file ]
-        then
-            ergodic $1/$file
-        else
-            md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE
-        fi
-    done
-}
-#设置输出文件名
-RECORDFILE=check.md5
-#如果存在先删除，防止重复运行脚本时追加到记录文件
-test -e $RECORDFILE &amp;&amp; rm $RECORDFILE
-#获取当前目录
-INIT_PATH=`pwd`
-#遍历所有文件
-ergodic $INIT_PATH
-
-#按文件名称排序
-sort t -k 2 $RECORDFILE -o $RECORDFILE
+<pre><code class="language-html">&lt;div role=&quot;dialog&quot; aria-labelledby=&quot;dialog-heading&quot;&gt;
+  &lt;button aria-label=&quot;close&quot;&gt;x&lt;/button&gt;
+  &lt;h2 id=&quot;dialog-heading&quot;&gt;Confirmation&lt;/h2&gt;
+  &lt;p&gt;Press Okay to confirm or Cancel&lt;/p&gt;
+  &lt;button&gt;Okay&lt;/button&gt;
+  &lt;button&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
 </code></pre>
-<pre><code class="language-shell">#!/bin/bash
 
-function ergodic(){
-    for file in `ls -a $1`
-    do
-        if [ $file == . ] || [ $file == .. ] || [ $file == &quot;kafka&quot; ]
-        then
-            continue
-        fi
-        if [ -d $1/$file ]
-        then
-            ergodic $1/$file
-        else
-            md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE
-        fi
-    done
-}
-#设置输出文件名
-RECORDFILE=check.md5
-#如果存在先删除，防止重复运行脚本时追加到记录文件
-test -e $RECORDFILE &amp;&amp; rm $RECORDFILE
-#获取当前目录
-INIT_PATH=`pwd`
-#遍历所有文件
-ergodic $INIT_PATH
 
-#按文件名称排序
-sort t -k 2 $RECORDFILE -o $RECORDFILE
-</code></pre>
+<pre class="cmd">
+  
+  <code>#!/bin/bash</code>
+  
+  <code></code>
+  
+  <code>function ergodic(){</code>
+  
+  <code>    for file in `ls -a $1`</code>
+  
+  <code>    do</code>
+  
+  <code>        if [ $file == . ] || [ $file == .. ] || [ $file == &#34;kafka&#34; ]</code>
+  
+  <code>        then</code>
+  
+  <code>            continue</code>
+  
+  <code>        fi</code>
+  
+  <code>        if [ -d $1/$file ]</code>
+  
+  <code>        then</code>
+  
+  <code>            ergodic $1/$file</code>
+  
+  <code>        else</code>
+  
+  <code>            md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE</code>
+  
+  <code>        fi</code>
+  
+  <code>    done</code>
+  
+  <code>}</code>
+  
+  <code>#设置输出文件名</code>
+  
+  <code>RECORDFILE=check.md5</code>
+  
+  <code>#如果存在先删除，防止重复运行脚本时追加到记录文件</code>
+  
+  <code>test -e $RECORDFILE &amp;&amp; rm $RECORDFILE</code>
+  
+  <code>#获取当前目录</code>
+  
+  <code>INIT_PATH=`pwd`</code>
+  
+  <code>#遍历所有文件</code>
+  
+  <code>ergodic $INIT_PATH</code>
+  
+  <code></code>
+  
+  <code>#按文件名称排序</code>
+  
+  <code>sort t -k 2 $RECORDFILE -o $RECORDFILE</code>
+  
+</pre>
+
 
   </main>
 
