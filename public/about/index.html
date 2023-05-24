@@ -11,7 +11,7 @@
   
     
     <meta name="description" content="偶尔更新一些内容
-#!/bin/bash function ergodic(){ for file in `ls -a $1` do if [ $file == . ] || [ $file == .. ] || [ $file == &#34;kafka&#34; ] then continue fi if [ -d $1/$file ] then ergodic $1/$file else md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE fi done } #设置输出文件名 RECORDFILE=check.md5 #如果存在先删除，防止重复运行脚本时追加到记录文件 test -e $RECORDFILE &amp;&amp; rm $RECORDFILE #获取当前目录 INIT_PATH=`pwd` #遍历所有文件 ergodic $INIT_PATH #按文件名称排序 sort t -k 2 $RECORDFILE -o $RECORDFILE ">
+#!/bin/bash function ergodic(){ for file in `ls -a $1` do if [ $file == . ] || [ $file == .. ] || [ $file == &#34;kafka&#34; ] then continue fi if [ -d $1/$file ] then ergodic $1/$file else md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE fi done } #设置输出文件名 RECORDFILE=check.md5 #如果存在先删除，防止重复运行脚本时追加到记录文件 test -e $RECORDFILE &amp;&amp; rm $RECORDFILE #获取当前目录 INIT_PATH=`pwd` #遍历所有文件 ergodic $INIT_PATH #按文件名称排序 sort t -k 2 $RECORDFILE -o $RECORDFILE #!">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://blog.codesheng.top/apple-touch-icon.png">
@@ -259,6 +259,35 @@
   <main id="main">
     <h1>About</h1>
     <p>偶尔更新一些内容</p>
+<pre><code class="language-cpp">#!/bin/bash
+
+function ergodic(){
+    for file in `ls -a $1`
+    do
+        if [ $file == . ] || [ $file == .. ] || [ $file == &quot;kafka&quot; ]
+        then
+            continue
+        fi
+        if [ -d $1/$file ]
+        then
+            ergodic $1/$file
+        else
+            md5sum $1/$file | sed s#$INIT_PATH/## &gt;&gt; $RECORDFILE
+        fi
+    done
+}
+#设置输出文件名
+RECORDFILE=check.md5
+#如果存在先删除，防止重复运行脚本时追加到记录文件
+test -e $RECORDFILE &amp;&amp; rm $RECORDFILE
+#获取当前目录
+INIT_PATH=`pwd`
+#遍历所有文件
+ergodic $INIT_PATH
+
+#按文件名称排序
+sort t -k 2 $RECORDFILE -o $RECORDFILE
+</code></pre>
 <pre><code class="language-shell">#!/bin/bash
 
 function ergodic(){
