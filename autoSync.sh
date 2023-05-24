@@ -2,7 +2,7 @@
 
 hugo -D
 
-git pull origin master
+# git pull origin master
 git add .
 git commit -m 'add some code from Mac'
 
