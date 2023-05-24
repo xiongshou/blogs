@@ -358,10 +358,10 @@ caption {
     max-width: 25rem;
 }
 .main-and-footer {
-    margin-left: 10rem;
+    margin-left: 15rem;
 }
 .main-and-footer > div {
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 2.25rem;
 }
@@ -973,7 +973,7 @@ h1 svg {
         display: none;
     }
     .main-and-footer {
-        margin-left: 5;
+        margin-left: 0;
     }
     a {
         border: 0;
