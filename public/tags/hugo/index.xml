@@ -16,9 +16,9 @@
       <description>Enable Katex in the config file by setting the katex param to true. This will import the necessary Katex CSS/JS.
 Note: Use the online reference of supported TeX functions.
 Some math:
-$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$ $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 More math:
-$$\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
     </item>
     
     <item>

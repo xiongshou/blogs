@@ -17,7 +17,7 @@ imaging:
   quality: 99
 
 params:
-  description: 盛某人偶尔写字的地方.
+  description: 盛某人在互联网上的数字自留地.
   # homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
   # footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
   # For more date formats see https://gohugo.io/functions/format/
