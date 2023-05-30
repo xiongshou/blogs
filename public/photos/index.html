@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.101.0" />
-  <link rel="canonical" href="https://blog.codesheng.top/tags/" />
+  <link rel="canonical" href="https://blog.codesheng.top/photos/" />
 
   
     
-    <meta name="description" content="Tags">
+    <meta name="description" content="">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://blog.codesheng.top/apple-touch-icon.png">
@@ -60,7 +60,7 @@
 
   
   
-  <title>Tags | sheng</title>
+  <title> | sheng</title>
 </head>
 
   <body>
@@ -225,7 +225,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use href="#bookmark"></use>
         </svg>
@@ -268,23 +268,72 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>Tags</h1>
-    <ul class="patterns-list">
-      
-        <li>
-          <h2>
-            <a href="/tags/hugo/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use href="#tag"></use>
-              </svg>
-              (3) hugo
-            </a>
-          </h2>
-        </li>
-      
-    </ul>
-  </main>
+<div class="gallery-photos page">
+  
+    
+    <div class="gallery-photo">
+      <img class="photo-img" loading='lazy' decoding="async" src="/photos/img_v2_a7603849-83bc-4b9b-a431-2852445b98ag%e7%9a%84%e5%89%af%e6%9c%ac3.jpg" alt="img_v2_a7603849-83bc-4b9b-a431-2852445b98ag的副本3.jpg" />
+      <span class="photo-title">img_v2_a7603849-83bc-4b9b-a431-2852445b98ag的副本3.jpg</span><span class="photo-time">img_v2_a7603849-83bc-4b9b-a431-2852445b98ag的副本3.jpg</span>
+    </div>
+    
+  
+    
+    <div class="gallery-photo">
+      <img class="photo-img" loading='lazy' decoding="async" src="/photos/img_v2_343a0f88-e235-4123-9a03-25305db00b1g.jpg" alt="img_v2_343a0f88-e235-4123-9a03-25305db00b1g.jpg" />
+      <span class="photo-title">img_v2_343a0f88-e235-4123-9a03-25305db00b1g.jpg</span><span class="photo-time">img_v2_343a0f88-e235-4123-9a03-25305db00b1g.jpg</span>
+    </div>
+    
+  
+    
+  
+</div>
+
+<style>
+.gallery-photos{width:100%;}
+.gallery-photo{width:24.9%;position: relative;visibility: hidden;overflow: hidden;}
+.gallery-photo.visible{visibility: visible;animation: fadeIn 2s;}
+.gallery-photo img{display: block;width:100%;border-radius:0;padding:4px;animation: fadeIn 1s;cursor: pointer;transition: all .4s ease-in-out;}
+.gallery-photo span.photo-title,.gallery-photo span.photo-time{background: rgba(0, 0, 0, 0.3);padding:0px 8px;font-size:0.9rem;color: #fff;display:none;animation: fadeIn 1s;}
+.gallery-photo span.photo-title{position:absolute;bottom:4px;left:4px;}
+.gallery-photo span.photo-time{position:absolute;top:4px;left:4px;font-size:0.8rem;}
+.gallery-photo:hover span.photo-title{display:block;}
+.gallery-photo:hover img{transform: scale(1.1);}
+@media screen and (max-width: 1280px) {
+	.gallery-photo{width:33.3%;}
+}
+@media screen and (max-width: 860px) {
+	.gallery-photo{width:49.9%;}
+}
+@media (max-width: 683px){
+	.photo-time{display: none;}
+}
+@keyframes fadeIn{
+	0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+</style>
+<script src="https://immmmm.com/waterfall.min.js"></script>
+<script src="https://immmmm.com/imgStatus.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    imgStatus.watch('.photo-img', function(imgs) {
+      if(imgs.isDone()){
+        waterfall('.gallery-photos');
+        let pagePhoto = document.querySelectorAll('.gallery-photo');
+        for(var i=0;i < pagePhoto.length;i++){pagePhoto[i].className += " visible"};
+      }
+    });
+    window.addEventListener('resize', function () {
+      waterfall('.gallery-photos');
+    });
+});
+</script>
+<script src="https://immmmm.com/view-image.js"></script>
+<script src="https://immmmm.com/lately.min.js"></script>
+<script>
+  window.Lately && Lately.init({ target: '.photo-time'});
+  window.ViewImage && ViewImage.init('.gallery-photo img')
+</script>
 
           
             <footer role="contentinfo">
